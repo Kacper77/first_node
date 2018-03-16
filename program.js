@@ -6,10 +6,10 @@ process.stdin.on('readable', function() {
         var instruction = input.toString().trim();
         switch (instruction) {
             case 'version':
-                process.stdout.write('Node version:' + process.versions.node);
+                process.stdout.write('Node version:' + process.versions.node + '\n');
                 break;
             case 'language':
-                process.stdout.write('System language:' + process.env.LANG);
+                process.stdout.write('System language:' + process.env.LANG + '\n');
 
                 break;
             case 'exit':
